@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Counter</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .blink {
+            animation: blink 2s infinite;
+            color: rgb(161, 76, 185);
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .rotate {
+            
+            height: 150px;
+            width: 150px;
+        }
+        .text2{
+            color: darkgray;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <h1 class="text-2xl font-bold mb-4">Finding Jobs</h1>
+        <p class="text-xl mb-4 blink" id="daysCount"></p>
+        <p class="text-lg text-red-700">
+            Since September 8, 2023, the journey to find a job has been both challenging and rewarding. Each day brings new opportunities and learning experiences, contributing to professional growth and resilience. Keeping track of this timeline serves as a reminder of the persistence and effort put into achieving career goals. Whether it's preparing for interviews, enhancing skills, or networking, every single day counts towards the ultimate goal of landing the desired job.
+        </p>
+        <p class="text2">
+            Basics Skills : HTML, CSS, JavaScript (Web Development).🔥
+            <br>
+            Libraries & Frameworks : React.js, Node.js, Express, Bootstrap, Figma.🔥
+            <br>
+            DataBase : NoSQL, MongoDB.🔥
+            <br>
+            Programming Language : JavaScript❤️
+        </p>
+        <img src="./assests/IMG_20230806_223044.jpg" alt="Rotating Image" class="rotate mx-auto mt-4">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
